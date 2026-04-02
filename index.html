@@ -1,860 +1,1140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Gokulnath Suresh</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gokulnath Suresh — Senior Data Engineer specialising in cloud-based ETL pipelines, Snowflake, AWS, Dagster, and modern data platforms.">
+    <meta property="og:title" content="Gokulnath Suresh — Data Engineer">
+    <meta property="og:description" content="5+ years designing scalable cloud data platforms, ETL pipelines, and data architectures.">
+    <title>Gokulnath Suresh — Data Engineer</title>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <style>
+        /* ─── RESET & VARIABLES ─── */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><span>G</span>okulnath Suresh</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+        :root {
+            --bg:           #04040a;
+            --bg-2:         #08081a;
+            --surface:      #0e0e20;
+            --card:         #13132a;
+            --card-hover:   #181832;
+            --border:       rgba(255,255,255,0.06);
+            --border-glow:  rgba(124,58,237,0.35);
+            --primary:      #7c3aed;
+            --primary-light:#a78bfa;
+            --secondary:    #06b6d4;
+            --accent:       #f59e0b;
+            --green:        #4ade80;
+            --text:         #ededf5;
+            --text-muted:   #8888aa;
+            --text-dim:     #44445a;
+            --gradient:     linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+            --gradient-r:   linear-gradient(135deg, #06b6d4 0%, #7c3aed 100%);
+            --font:         'Inter', sans-serif;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-mono:    'JetBrains Mono', monospace;
+            --radius:       14px;
+            --shadow:       0 20px 60px rgba(0,0,0,0.5);
+        }
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#page-1" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#page-3" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#page-4" class="nav-link"><span>Projects</span></a></li>
-	          <!-- <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> -->
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section class="hero-wrap js-fullheight">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-          	<div class="text text-center">
-          		<span class="subheading">Hey! I am</span>
-		  				<h1>Gokulnath Suresh</h1>
-			  				<h2>I'm a 
-								  <span
-								     class="txt-rotate"
-								     data-period="2000"
-								     data-rotate='[ "Data Engineer", "Web Developer", "Software Enginner", "Data Science Enthusiast" ]'></span>
-								</h2>
-							</div>
-            </div>
-          </div>
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+
+        ::selection { background: var(--primary); color: #fff; }
+
+        ::-webkit-scrollbar { width: 3px; }
+        ::-webkit-scrollbar-track { background: var(--bg-2); }
+        ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+
+        /* ─── CURSOR ─── */
+        #cursor {
+            width: 22px; height: 22px;
+            border: 1.5px solid var(--primary-light);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 10000;
+            transform: translate(-50%, -50%);
+            transition: transform 0.15s ease, width 0.3s, height 0.3s, opacity 0.3s, border-color 0.3s;
+            mix-blend-mode: exclusion;
+        }
+        #cursor-dot {
+            width: 5px; height: 5px;
+            background: var(--secondary);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 10000;
+            transform: translate(-50%, -50%);
+            transition: transform 0.05s;
+        }
+        #cursor.hover { width: 44px; height: 44px; opacity: 0.5; border-color: var(--secondary); }
+
+        /* ─── NAVBAR ─── */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            z-index: 900;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.4rem 3rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        nav.scrolled {
+            background: rgba(4, 4, 10, 0.82);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.9rem 3rem;
+        }
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem; font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            letter-spacing: -0.03em;
+        }
+        .nav-links {
+            display: flex; gap: 2.5rem; list-style: none; align-items: center;
+        }
+        .nav-links a {
+            color: var(--text-muted); text-decoration: none;
+            font-size: 0.875rem; font-weight: 500; letter-spacing: 0.02em;
+            transition: color 0.3s;
+            position: relative;
+        }
+        .nav-links a:not(.btn-nav)::after {
+            content: ''; position: absolute; bottom: -3px; left: 0;
+            width: 0; height: 1px; background: var(--primary-light);
+            transition: width 0.3s ease;
+        }
+        .nav-links a:not(.btn-nav):hover { color: var(--text); }
+        .nav-links a:not(.btn-nav):hover::after { width: 100%; }
+        .btn-nav {
+            background: var(--gradient); color: #fff !important;
+            padding: 0.5rem 1.3rem; border-radius: 8px;
+            font-weight: 600 !important;
+            transition: opacity 0.3s, transform 0.3s !important;
+        }
+        .btn-nav:hover { opacity: 0.85; transform: translateY(-2px); }
+        .hamburger {
+            display: none; flex-direction: column;
+            gap: 5px; cursor: pointer; z-index: 901;
+        }
+        .hamburger span {
+            display: block; width: 24px; height: 2px;
+            background: var(--text); border-radius: 2px;
+            transition: all 0.35s;
+        }
+        .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+        /* ─── HERO ─── */
+        #hero {
+            min-height: 100vh;
+            display: flex; align-items: center;
+            position: relative; overflow: hidden;
+            padding: 9rem 3rem 6rem;
+        }
+        .hero-bg {
+            position: absolute; inset: 0; z-index: 0; pointer-events: none;
+        }
+        .grid-lines {
+            position: absolute; inset: 0;
+            background-image:
+                linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
+            background-size: 72px 72px;
+        }
+        .orb {
+            position: absolute; border-radius: 50%;
+            filter: blur(90px); opacity: 0;
+            animation: orbFloat 10s ease-in-out infinite;
+        }
+        .orb-1 {
+            width: 560px; height: 560px;
+            background: radial-gradient(circle, rgba(124,58,237,0.6), transparent 70%);
+            top: -120px; right: -80px; animation-delay: 0s;
+        }
+        .orb-2 {
+            width: 420px; height: 420px;
+            background: radial-gradient(circle, rgba(6,182,212,0.5), transparent 70%);
+            bottom: -60px; left: -60px; animation-delay: -4s;
+        }
+        .orb-3 {
+            width: 280px; height: 280px;
+            background: radial-gradient(circle, rgba(245,158,11,0.35), transparent 70%);
+            top: 45%; left: 38%; animation-delay: -7s;
+        }
+        @keyframes orbFloat {
+            0%   { opacity: 0.32; transform: translate(0,0) scale(1); }
+            33%  { opacity: 0.38; transform: translate(-25px,-35px) scale(1.04); }
+            66%  { opacity: 0.28; transform: translate(20px,20px) scale(0.96); }
+            100% { opacity: 0.32; transform: translate(0,0) scale(1); }
+        }
+        .hero-content {
+            position: relative; z-index: 1;
+            max-width: 1100px; margin: 0 auto; width: 100%;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            border: 1px solid rgba(124,58,237,0.35);
+            background: rgba(124,58,237,0.1);
+            padding: 0.4rem 1.1rem; border-radius: 100px;
+            font-size: 0.78rem; color: var(--primary-light);
+            font-family: var(--font-mono); letter-spacing: 0.06em;
+            margin-bottom: 2rem;
+        }
+        .badge-dot {
+            width: 7px; height: 7px;
+            background: var(--green); border-radius: 50%;
+            animation: ping 2s ease infinite;
+        }
+        @keyframes ping {
+            0%,100% { opacity:1; box-shadow: 0 0 0 0 rgba(74,222,128,0.5); }
+            60%      { opacity:0.85; box-shadow: 0 0 0 7px rgba(74,222,128,0); }
+        }
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 6.5rem);
+            font-weight: 800; line-height: 1.04;
+            letter-spacing: -0.04em;
+            margin-bottom: 1.5rem;
+        }
+        .hero-title .line-2 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-sub {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            color: var(--text-muted); max-width: 580px;
+            margin-bottom: 1rem; line-height: 1.75;
+        }
+        .hero-typing {
+            font-family: var(--font-mono);
+            font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+            color: var(--secondary);
+            margin-bottom: 3rem;
+            min-height: 1.6em;
+        }
+        .cursor-blink {
+            display: inline-block;
+            width: 2px; height: 1.1em;
+            background: var(--secondary);
+            margin-left: 2px;
+            vertical-align: text-bottom;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            0%,100% { opacity:1; }
+            50%      { opacity:0; }
+        }
+        .hero-ctas {
+            display: flex; gap: 1rem; flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: var(--gradient); color: #fff;
+            padding: 0.9rem 2.2rem; border-radius: 10px;
+            text-decoration: none; font-weight: 700; font-size: 0.92rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            letter-spacing: 0.01em;
+        }
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(124,58,237,0.4);
+        }
+        .btn-outline {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: transparent; color: var(--text);
+            padding: 0.9rem 2.2rem; border-radius: 10px;
+            text-decoration: none; font-weight: 600; font-size: 0.92rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s; letter-spacing: 0.01em;
+        }
+        .btn-outline:hover {
+            border-color: var(--primary-light);
+            color: var(--primary-light);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(124,58,237,0.15);
+        }
+        .hero-links {
+            display: flex; gap: 2rem; flex-wrap: wrap;
+        }
+        .social-link {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            color: var(--text-dim); text-decoration: none;
+            font-size: 0.83rem; transition: color 0.3s;
+        }
+        .social-link:hover { color: var(--primary-light); }
+        .social-link svg { flex-shrink: 0; }
+        .scroll-indicator {
+            position: absolute; bottom: 2.5rem; left: 50%;
+            transform: translateX(-50%);
+            display: flex; flex-direction: column; align-items: center;
+            gap: 0.5rem;
+        }
+        .scroll-label {
+            font-family: var(--font-mono); font-size: 0.7rem;
+            letter-spacing: 0.15em; text-transform: uppercase;
+            color: var(--text-dim);
+        }
+        .scroll-bar {
+            width: 1px; height: 64px;
+            background: linear-gradient(to bottom, var(--primary-light), transparent);
+            animation: scrollAnim 2.5s ease infinite;
+            transform-origin: top;
+        }
+        @keyframes scrollAnim {
+            0%   { transform: scaleY(0); opacity: 0; }
+            30%  { opacity: 1; }
+            60%  { transform: scaleY(1); opacity: 1; }
+            100% { transform: scaleY(1); opacity: 0; transform-origin: bottom; }
+        }
+
+        /* ─── SHARED SECTION ─── */
+        section { padding: 7rem 3rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .section-eyebrow {
+            font-family: var(--font-mono); font-size: 0.76rem;
+            color: var(--primary-light); letter-spacing: 0.16em;
+            text-transform: uppercase; margin-bottom: 0.75rem;
+        }
+        .section-heading {
+            font-family: var(--font-display);
+            font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+            font-weight: 700; letter-spacing: -0.025em;
+            margin-bottom: 0.75rem; line-height: 1.15;
+        }
+        .section-bar {
+            width: 52px; height: 3px;
+            background: var(--gradient); border-radius: 3px;
+            margin-bottom: 3.5rem;
+        }
+
+        /* ─── REVEAL ─── */
+        .reveal {
+            opacity: 0; transform: translateY(36px);
+            transition: opacity 0.75s cubic-bezier(0.4,0,0.2,1),
+                        transform 0.75s cubic-bezier(0.4,0,0.2,1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal.d1 { transition-delay: 0.1s; }
+        .reveal.d2 { transition-delay: 0.2s; }
+        .reveal.d3 { transition-delay: 0.3s; }
+        .reveal.d4 { transition-delay: 0.4s; }
+
+        /* ─── ABOUT ─── */
+        #about { background: var(--bg-2); }
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 5rem; align-items: center;
+        }
+        .about-body p {
+            color: var(--text-muted); font-size: 1.05rem;
+            line-height: 1.9; margin-bottom: 1.2rem;
+        }
+        .about-body p strong { color: var(--text); }
+        .about-meta {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 1.25rem; margin-top: 2.5rem;
+            padding-top: 2rem; border-top: 1px solid var(--border);
+        }
+        .meta-item .meta-label {
+            font-family: var(--font-mono); font-size: 0.7rem;
+            text-transform: uppercase; letter-spacing: 0.12em;
+            color: var(--text-dim); margin-bottom: 0.3rem;
+        }
+        .meta-item .meta-val {
+            font-size: 0.9rem; font-weight: 600; color: var(--text);
+        }
+        .meta-item .meta-val.available { color: var(--green); }
+        .stats-quad {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+        .stat-box {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 2rem 1.5rem;
+            text-align: center; position: relative; overflow: hidden;
+            transition: transform 0.35s, border-color 0.35s, box-shadow 0.35s;
+        }
+        .stat-box::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0;
+            height: 2px; background: var(--gradient);
+            transform: scaleX(0); transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        .stat-box:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-glow);
+            box-shadow: 0 20px 50px rgba(124,58,237,0.15);
+        }
+        .stat-box:hover::before { transform: scaleX(1); }
+        .stat-num {
+            font-family: var(--font-display); font-size: 2.8rem;
+            font-weight: 800; line-height: 1;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.6rem;
+        }
+        .stat-desc {
+            font-size: 0.8rem; color: var(--text-muted);
+            font-weight: 500; line-height: 1.4;
+        }
+
+        /* ─── EXPERIENCE ─── */
+        #experience { background: var(--bg); }
+        .timeline {
+            position: relative; padding-left: 1.5rem;
+        }
+        .timeline::before {
+            content: ''; position: absolute;
+            left: 0; top: 6px; bottom: 6px; width: 1px;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary), rgba(6,182,212,0.1));
+        }
+        .tl-item {
+            position: relative; margin-bottom: 2.5rem; padding-left: 2.25rem;
+        }
+        .tl-item::before {
+            content: ''; position: absolute;
+            left: calc(-1.5rem - 5px); top: 6px;
+            width: 11px; height: 11px;
+            background: var(--primary); border-radius: 50%;
+            border: 2px solid var(--bg);
+            box-shadow: 0 0 0 4px rgba(124,58,237,0.2), 0 0 16px rgba(124,58,237,0.4);
+        }
+        .exp-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 2.25rem 2.5rem;
+            transition: transform 0.35s, border-color 0.35s, box-shadow 0.35s;
+        }
+        .exp-card:hover {
+            transform: translateX(8px);
+            border-color: var(--border-glow);
+            box-shadow: 0 20px 60px rgba(124,58,237,0.12);
+        }
+        .exp-header {
+            display: flex; justify-content: space-between;
+            align-items: flex-start; gap: 1rem; flex-wrap: wrap;
+            margin-bottom: 0.4rem;
+        }
+        .exp-company {
+            font-family: var(--font-display);
+            font-size: 1.3rem; font-weight: 700; color: var(--text);
+        }
+        .exp-pill {
+            font-family: var(--font-mono); font-size: 0.75rem;
+            background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.2);
+            color: var(--secondary); padding: 0.28rem 0.85rem;
+            border-radius: 100px; white-space: nowrap; flex-shrink: 0;
+        }
+        .exp-role {
+            font-size: 0.95rem; font-weight: 600;
+            color: var(--primary-light); margin-bottom: 0.2rem;
+        }
+        .exp-loc {
+            font-family: var(--font-mono); font-size: 0.78rem;
+            color: var(--text-dim); margin-bottom: 1.5rem;
+        }
+        .exp-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+        .exp-list li {
+            display: flex; gap: 0.75rem;
+            font-size: 0.91rem; color: var(--text-muted); line-height: 1.75;
+        }
+        .exp-list li::before {
+            content: '▸'; color: var(--primary-light);
+            flex-shrink: 0; margin-top: 0.1em;
+        }
+        .exp-list li strong { color: var(--text); }
+        .tag-row {
+            display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem;
+        }
+        .chip {
+            font-family: var(--font-mono); font-size: 0.72rem;
+            padding: 0.28rem 0.75rem; border-radius: 6px;
+            background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.2);
+            color: var(--primary-light); transition: all 0.25s;
+        }
+        .chip:hover {
+            background: rgba(124,58,237,0.2); border-color: var(--primary-light);
+        }
+
+        /* ─── SKILLS ─── */
+        #skills { background: var(--bg-2); }
+        .skills-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill-cat {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 2rem;
+            transition: transform 0.35s, border-color 0.35s, box-shadow 0.35s;
+        }
+        .skill-cat:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-glow);
+            box-shadow: 0 20px 50px rgba(124,58,237,0.12);
+        }
+        .skill-cat-head {
+            display: flex; align-items: center; gap: 0.6rem;
+            font-family: var(--font-display); font-size: 0.8rem;
+            font-weight: 600; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 0.1em;
+            margin-bottom: 1.25rem;
+        }
+        .skill-cat-head .ico { font-size: 1rem; }
+        .pill-grid { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+        .skill-pill {
+            background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+            color: var(--text); padding: 0.4rem 0.85rem; border-radius: 8px;
+            font-size: 0.83rem; font-weight: 500;
+            transition: all 0.25s; cursor: default;
+        }
+        .skill-pill:hover {
+            background: rgba(124,58,237,0.14);
+            border-color: var(--primary-light);
+            color: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        /* ─── EDUCATION ─── */
+        #education { background: var(--bg); }
+        .edu-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+        }
+        .edu-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 2.5rem;
+            position: relative; overflow: hidden;
+            transition: transform 0.35s, border-color 0.35s, box-shadow 0.35s;
+        }
+        .edu-card::after {
+            content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+            height: 2px; background: var(--gradient);
+            transform: scaleX(0); transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        .edu-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--border-glow);
+            box-shadow: 0 24px 60px rgba(124,58,237,0.14);
+        }
+        .edu-card:hover::after { transform: scaleX(1); }
+        .edu-pill {
+            display: inline-flex; align-items: center;
+            background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.2);
+            color: var(--secondary); padding: 0.28rem 0.85rem;
+            border-radius: 100px; font-size: 0.72rem;
+            font-family: var(--font-mono); margin-bottom: 1.5rem;
+        }
+        .edu-uni {
+            font-family: var(--font-display); font-size: 1.2rem;
+            font-weight: 700; margin-bottom: 0.35rem;
+        }
+        .edu-deg {
+            font-size: 0.95rem; font-weight: 600;
+            color: var(--primary-light); margin-bottom: 0.3rem;
+        }
+        .edu-grade {
+            font-family: var(--font-mono); font-size: 0.82rem;
+            color: var(--accent); font-weight: 600; margin-bottom: 1.25rem;
+        }
+        .edu-courses {
+            font-size: 0.84rem; color: var(--text-dim); line-height: 1.75;
+        }
+        .edu-courses strong { color: var(--text-muted); }
+
+        /* ─── CONTACT ─── */
+        #contact { background: var(--bg-2); }
+        .contact-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+        .contact-intro {
+            font-size: 1.1rem; color: var(--text-muted);
+            line-height: 1.85; margin-bottom: 3rem;
+        }
+        .contact-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 1rem; margin-bottom: 3rem;
+        }
+        .contact-tile {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 1.75rem 1rem;
+            text-decoration: none; display: flex; flex-direction: column;
+            align-items: center; gap: 0.5rem;
+            transition: all 0.35s;
+        }
+        .contact-tile:hover {
+            border-color: var(--border-glow);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(124,58,237,0.15);
+        }
+        .contact-tile .ico { font-size: 1.6rem; }
+        .contact-tile .lbl {
+            font-family: var(--font-mono); font-size: 0.68rem;
+            text-transform: uppercase; letter-spacing: 0.12em;
+            color: var(--text-dim);
+        }
+        .contact-tile .val {
+            font-size: 0.82rem; font-weight: 500; color: var(--text);
+            word-break: break-word;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: var(--bg); border-top: 1px solid var(--border);
+            padding: 2.25rem 3rem; display: flex;
+            justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 1rem;
+        }
+        .footer-text {
+            font-family: var(--font-mono); font-size: 0.78rem;
+            color: var(--text-dim);
+        }
+        .footer-text span { color: var(--primary-light); }
+        .footer-links {
+            display: flex; gap: 1.5rem;
+        }
+        .footer-links a {
+            font-family: var(--font-mono); font-size: 0.76rem;
+            color: var(--text-dim); text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--primary-light); }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 900px) {
+            nav { padding: 1.2rem 2rem; }
+            nav.scrolled { padding: 0.8rem 2rem; }
+            section { padding: 5rem 1.75rem; }
+            #hero { padding: 8rem 1.75rem 5rem; }
+            .hamburger { display: flex; }
+            .nav-links {
+                position: fixed; inset: 0;
+                background: rgba(4,4,10,0.96);
+                backdrop-filter: blur(24px);
+                flex-direction: column; justify-content: center;
+                align-items: center; gap: 2.5rem;
+                transform: translateX(100%);
+                transition: transform 0.4s cubic-bezier(0.77,0,0.175,1);
+            }
+            .nav-links.open { transform: translateX(0); }
+            .nav-links a { font-size: 1.4rem; }
+            .about-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+            .edu-grid { grid-template-columns: 1fr; }
+            .stats-quad { grid-template-columns: 1fr 1fr; }
+            footer { flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 600px) {
+            .hero-title { font-size: 2.8rem; }
+            .stats-quad { grid-template-columns: 1fr 1fr; }
+            #cursor, #cursor-dot { display: none; }
+            .hero-links { flex-direction: column; gap: 0.75rem; }
+            .hero-ctas { flex-direction: column; }
+            .btn-primary, .btn-outline { text-align: center; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <a href="#hero" class="nav-logo">GS.</a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about"      onclick="closeNav()">About</a></li>
+        <li><a href="#experience" onclick="closeNav()">Experience</a></li>
+        <li><a href="#skills"     onclick="closeNav()">Skills</a></li>
+        <li><a href="#education"  onclick="closeNav()">Education</a></li>
+        <li><a href="#contact" class="btn-nav" onclick="closeNav()">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+    <div class="hero-bg">
+        <div class="grid-lines"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for opportunities
         </div>
-      </div>
-      <div class="mouse">
-				<a href="#" class="mouse-icon">
-					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-				</a>
-			</div>
-    </section>
 
-    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex no-gutters">
-    			<div class="col-md-6 col-lg-6 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<!-- <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg);"> -->
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
-		            <h2 class="mb-4">About Me</h2>
-		            <p>An enthusiastic and resourceful individual having expertise in Python and proven
-						knowledge of emerging technologies. I enjoy solving complex problems and have worked on multiple projects.
-						</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>Gokulnath Suresh</span></li>
-		            	<li class="d-flex"><span>Date of birth:</span> <span>November 29, 1996</span></li>
-		            	<li class="d-flex"><span>Address:</span> <span>Liverpool, United Kingdom</span></li>
-		            	<li class="d-flex"><span>Email:</span> <span>riogokul29@gmail.com</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>077604-19995</span></li>
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-                <p><a href="./images/gok.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
-              </div>
-	          </div>
-	        </div>
+        <h1 class="hero-title">
+            Hi, I'm<br>
+            <span class="line-2">Gokulnath Suresh</span>
+        </h1>
+
+        <p class="hero-sub">
+            Data Engineer crafting scalable, cloud-native data platforms and
+            resilient ETL ecosystems that power real business decisions.
+        </p>
+
+        <div class="hero-typing">
+            <span id="typingEl"></span><span class="cursor-blink"></span>
         </div>
-    	</div>
-    </section>
 
-    <!-- <section class="ftco-section ftco-partner">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-1.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-2.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-3.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-4.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-5.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    		</div>
-    	</div>
-    </section> -->
-
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-3">
-				    <nav id="navi">
-					    <ul>
-					      <li><a href="#page-1">Education</a></li>
-					      <li><a href="#page-2">Experience</a></li>
-					      <li><a href="#page-3">Skills</a></li>
-					      <li><a href="#page-4">Projects</a></li>
-					    </ul>
-					  </nav>
-					</div>
-					<div class="col-md-9">
-					  <div id="page-1" class= "page one">
-					  	<h2 class="heading">Education</h2>
-						  <div class="resume-wrap d-flex ftco-animate">
-	    				<div class="icon d-flex align-items-center justify-content-center">
-					    	<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2021-2022</span>
-		    					<h2>Master of Science in Advanced Computer Science</h2>
-		    					<span class="position">University of Liverpool, United Kingdom</span>
-		    					<p>Coursework: Advanced and Applied Algorithms, Time Series Analysis, Data Mining and Visualisation,
-									Machine Learning, and Bioinspired Optimisation</p>
-		    				</div>
-	    				</div>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2018</span>
-		    					<h2>Bachelor of Science in Information Technology</h2>
-		    					<span class="position">Anna University, Chennai, India</span>
-		    					<p>Coursework: Object-oriented Programming, Data Structures and Algorithms, Software Engineering,
-									Artificial Intelligence, Operating Systems, and Database Management</p>
-	    					</div>
-	    				</div>
-
-					  <div id="page-2" class= "page two">
-					  	<h2 class="heading">Experience</h2>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2018-2021</span>
-		    					<h2>Data Engineer</h2>
-		    					<span class="position">Atos Syntel</span>
-		    					<p>- Developed and maintained data pipes on daily fund exchanges in the capital market across 15+ clients with a daily raw data flow of 100K records using CI/CD, data warehousing, ETL and analytical tools & systems.
-									<br>
-									- Collaborated with the senior management, developer and operation teams and took care of the production migration process of over 1k code changes per month employing DevOps practices.
-									<br>
-									- Constructed and managed a monitoring dashboard using the Django web framework to monitor backlogs in the data flow, which reduced the manual hourly monitoring process of running 10+ mins queries, 30% workload of the project and then was utilised as a standard tool for monitoring across internal teams.
-									<br>
-									- Volunteered and developed 10+ automation works using python, Java, shell scripting and Oracle SQL, helping to save 20+ hours of manual work per day and ~200K in revenue per year.
-									<br>
-									- Took ownership of the timely delivery of products to clients with critical SLAs and addressed complex data and environmental issues, and investigated the queries raised across various clients.
-									<br>
-									- Had hands-on experience in Python, Oracle PL/SQL, HTML, Server side programming, Unix Cloud Box, Migration of objects, analyzing the performance of Database objects, and have worked on Java programming involving data structures.
-									<br>
-									- Worked in resolving data and environment issues reported in ESP (an ETL data warehouse tool of StateStreet) analyzing the complete data flow through complex code.
-									<br>
-									- Trained and assisted 3 professionals to learn the automation process within a month and built a new team to work specifically on the DevOps migration process which reduced half the manual workload</p>
-		    				</div>
-	    				</div>
-	    				
-
-	    				</div>
-					  <div id="page-3" class= "page three">
-					  	<h2 class="heading">Skills</h2>
-					  	<div class="row progress-circle mb-5">
-					  		<div class="col-lg-4 mb-4">
-						      <div class="bg-white rounded-lg shadow p-4">
-						        <h2 class="h5 font-weight-bold text-center mb-4">Python</h2>
-
-						        <!-- Progress bar 1 -->
-						        <div class="progress mx-auto" data-value='90'>
-						          <span class="progress-left">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <span class="progress-right">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-						            <div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
-						          </div>
-						        </div>
-						        <!-- END -->
-
-						    
-						        <!-- END -->
-						      </div>
-						    </div>
-
-						    <div class="col-lg-4 mb-4">
-						      <div class="bg-white rounded-lg shadow p-4">
-						        <h2 class="h5 font-weight-bold text-center mb-4">SQL</h2>
-
-						        <!-- Progress bar 1 -->
-						        <div class="progress mx-auto" data-value='80'>
-						          <span class="progress-left">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <span class="progress-right">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-						            <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-						          </div>
-						        </div>
-						        <!-- END -->
-
-						        <!-- Demo info -->
-						        <!-- <div class="row text-center mt-4">
-						          <div class="col-6 border-right">
-						            <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-						          </div>
-						          <div class="col-6">
-						            <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-						          </div>
-						        </div> -->
-						        <!-- END -->
-						      </div>
-						    </div>
-
-						    <div class="col-lg-4 mb-4">
-						      <div class="bg-white rounded-lg shadow p-4">
-						        <h2 class="h5 font-weight-bold text-center mb-4">Machine Learning</h2>
-
-						        <!-- Progress bar 1 -->
-						        <div class="progress mx-auto" data-value='75'>
-						          <span class="progress-left">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <span class="progress-right">
-                        <span class="progress-bar border-primary"></span>
-						          </span>
-						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-						            <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
-						          </div>
-						        </div>
-						        <!-- END -->
-
-						        <!-- Demo info -->
-						        <!-- <div class="row text-center mt-4">
-						          <div class="col-6 border-right">
-						            <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-						          </div>
-						          <div class="col-6">
-						            <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-						          </div>
-						        </div> -->
-						        <!-- END -->
-						      </div>
-						    </div>
-					  	</div>
-					  	<div class="row">
-					  		<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>UNIX</h3>
-										<div class="progress">
-										 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-										    <span>90%</span>
-										  	</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>AWS</h3>
-										<div class="progress">
-										 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="50"
-										  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
-										    <span>50%</span>
-										  	</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>GIT</h3>
-										<div class="progress">
-										 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
-										  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-										    <span>75%</span>
-										  	</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Snowflake</h3>
-										<div class="progress">
-										 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-										    <span>90%</span>
-										  	</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Django</h3>
-										<div class="progress">
-										 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="85"
-										  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-										    <span>85%</span>
-										  	</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Javascript</h3>
-										<div class="progress">
-										 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-										  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-										    <span>80%</span>
-										  	</div>
-										</div>
-									</div>
-								</div>
-					  	</div>
-					  </div>
-					  <div id="page-4" class= "page four">
-					    <h2 class="heading">Projects</h2>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-analysis"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<!-- <span class="date">2014-2015</span> -->
-		    					<h2>Timeseries Prediction on Grocery Sales</h2>
-		    					<!-- <span class="position">Cambridge University</span> -->
-		    					<p>Predicted future sales by analyzing past time series data using
-									several neural network models and was able to provide more than 90% accurate predictions. These
-									predictions will be useful for the supermarkets to cut down 30% of their food wastage on average.</p>
-	    					</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-analysis"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<!-- <span class="date">2014-2015</span> -->
-		    					<h2>Predicting Failure of Rocket Landing
-									</h2>
-		    					<!-- <span class="position">Cambridge University</span> -->
-		    					<p>Performed EDA on the collected data from API and by scraping
-									from webpages and trained the data using several machine learning methods, predicting significant insights
-									on how to reuse a rocket by avoiding 37% failure while landing.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-analysis"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<!-- <span class="date">2014-2015</span> -->
-		    					<h2>Blog Application</h2>
-		    					<!-- <span class="position">Cambridge University</span> -->
-		    					<p>Built a full featuring blog application using Django Framework which includes features
-									like login with authentication, creating, updating and deleting a blog.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-analysis"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<!-- <span class="date">2014-2015</span> -->
-		    					<h2>ToDo App</h2>
-		    					<!-- <span class="position">Cambridge University</span> -->
-		    					<p>Created a web app to manage a to-do list, integrating Django for the backend and React for
-									the frontend along with REST API services to communicate between services.</p>
-		    				</div>
-	    				</div>
-					  </div>
-					</div>
-			  </div>
-    	</div>
-    </section>
-
-    <!-- <section class="ftco-section" id="services-section">
-    	<div class="container-fluid px-md-5">
-    		<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Services</h1>
-            <h2 class="mb-4">Services</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
+        <div class="hero-ctas">
+            <a href="#experience" class="btn-primary">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                View My Work
+            </a>
+            <a href="Gokulnath%20Suresh.pdf" download class="btn-outline">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Download Resume
+            </a>
         </div>
-    		<div class="row">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-analysis"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Web Design</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-flasks"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Phtography</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Web Developer</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							</div>
-						</a>
-					</div>
 
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-innovation"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">App Developing</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-ux-design"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Branding</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-idea"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Product Strategy</h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-							</div>
-						</a>
-					</div>
-				</div>
-    	</div>
-    </section> -->
- 
-<!-- 
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container-fluid px-md-0">
-    		<div class="row no-gutters justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Our Projects</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
+        <div class="hero-links">
+            <a href="https://linkedin.com/in/riogokul" target="_blank" rel="noopener" class="social-link">
+                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                linkedin.com/in/riogokul
+            </a>
+            <a href="mailto:riogokul29@gmail.com" class="social-link">
+                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                riogokul29@gmail.com
+            </a>
         </div>
-    		<div class="row no-gutters">
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
-  				<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
+    </div>
 
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section> -->
-<!-- 
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-    	<div class="container-fluid px-md-5">
-				<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 shadow">
-              <div class="text">
-                <strong class="number" data-number="100">0</strong>
-                <span>Awards</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 shadow">
-              <div class="text">
-                <strong class="number" data-number="1200">0</strong>
-                <span>Complete Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 shadow">
-              <div class="text">
-                <strong class="number" data-number="1200">0</strong>
-                <span>Happy Customers</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 shadow">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    <div class="scroll-indicator">
+        <div class="scroll-bar"></div>
+        <span class="scroll-label">scroll</span>
+    </div>
+</section>
 
-<!-- 
-    <section class="ftco-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Blog</h1>
-            <h2 class="mb-4">Our Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-body">
+                <div class="section-eyebrow reveal">// about me</div>
+                <h2 class="section-heading reveal">Building the pipelines<br>that power decisions</h2>
+                <div class="section-bar reveal"></div>
+                <p class="reveal">
+                    Data Engineer with <strong>5+ years of experience</strong> designing, building,
+                    and optimising scalable cloud-based data platforms in fast-paced environments.
+                </p>
+                <p class="reveal d1">
+                    Proven expertise in <strong>ETL automation, cloud migrations, and pipeline
+                    optimisation</strong> — delivering measurable gains in efficiency, scalability,
+                    and cost reduction across financial and enterprise domains.
+                </p>
+                <p class="reveal d2">
+                    Strong collaborator with cross-functional teams, translating business
+                    requirements into <strong>analytics-ready, well-modelled datasets</strong>.
+                </p>
+                <div class="about-meta reveal d3">
+                    <div class="meta-item">
+                        <div class="meta-label">Location</div>
+                        <div class="meta-val">Newcastle Upon Tyne, UK</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Email</div>
+                        <div class="meta-val">riogokul29@gmail.com</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Phone</div>
+                        <div class="meta-val">077604 19995</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Status</div>
+                        <div class="meta-val available">Open to Work</div>
+                    </div>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
+
+            <div class="stats-quad">
+                <div class="stat-box reveal">
+                    <div class="stat-num" data-count="5" data-suffix="+">0</div>
+                    <div class="stat-desc">Years of Experience</div>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
+                <div class="stat-box reveal d1">
+                    <div class="stat-num" data-count="150" data-suffix="+">0</div>
+                    <div class="stat-desc">ETL Pipelines Built</div>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
+                <div class="stat-box reveal d2">
+                    <div class="stat-num" data-count="40" data-suffix="%">0</div>
+                    <div class="stat-desc">Faster Processing via Dagster</div>
+                </div>
+                <div class="stat-box reveal d3">
+                    <div class="stat-num" data-count="200" data-suffix="K">$</div>
+                    <div class="stat-desc">Annual Revenue Supported</div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section> -->
+    </div>
+</section>
 
-    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-    	<div class="overlay"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>I'm <span>Available</span> for Software Enginner roles</h2>
-						<p>
-							<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
+<!-- ══════════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════════ -->
+<section id="experience">
+    <div class="container">
+        <div class="section-eyebrow reveal">// work experience</div>
+        <h2 class="section-heading reveal">Where I've Built</h2>
+        <div class="section-bar reveal"></div>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Feel free to contact me</p>
-          </div>
-        </div>
+        <div class="timeline">
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Address</h3>
-		            <p>23 Rockhouse street, Liverpool, United Kingdom</p>
-		          </div>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Contact Number</h3>
-		            <p><a href="tel://1234567920">077604-19995</a></p>
-	            </div>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Email Address</h3>
-		            <p><a href="mailto:riogokul29@gmail.com">riogokul29@gmail.com</a></p>
-		          </div>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Linkedin</h3>
-		            <p><a href="https://www.linkedin.com/in/riogokul/">linkedin.com/in/riogokul</a></p>
-	            </div>
-	          </div>
-          </div>
-        </div>
-
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          
-          </div>
-
-          <!-- <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/about.jpg);"></div>
-          </div> -->
-        </div>
-      </div>
-    </section>
-		
-
-    <footer class="ftco-footer ftco-section">
-      <!-- <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+            <!-- Verisure -->
+            <div class="tl-item reveal">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company">Verisure</div>
+                            <div class="exp-role">Data Engineer</div>
+                            <div class="exp-loc">Newcastle, United Kingdom</div>
+                        </div>
+                        <div class="exp-pill">Dec 2023 — Present</div>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Designed and operated <strong>150+ production ETL pipelines</strong> handling structured and unstructured data across Snowflake, AWS, Azure, Dagster, and Airflow to deliver analytics-ready datasets.</li>
+                        <li>Architected and managed <strong>AWS-based data infrastructure</strong> including object storage–backed data lakes and cloud-native orchestration, enabling reliable, fault-tolerant data processing into Snowflake.</li>
+                        <li>Developed automated transformations and quality checks using <strong>DBT</strong>, ensuring data reliability and consistency across all pipeline layers.</li>
+                        <li>Implemented monitoring frameworks and applied SQL query optimisation, reducing downstream data issues by <strong>25%</strong> and improving pipeline reliability and load times.</li>
+                        <li>Modernised legacy data workflows by migrating to <strong>Dagster</strong>, reducing end-to-end ETL processing time by <strong>40%</strong> while significantly improving observability, retries, and debugging efficiency.</li>
+                        <li>Established data governance policies and access controls ensuring compliance, secure data handling, and auditability across AWS and Snowflake environments.</li>
+                        <li>Collaborated closely with analysts and business stakeholders to translate analytical requirements into scalable, well-modelled pipelines.</li>
+                    </ul>
+                    <div class="tag-row">
+                        <span class="chip">Snowflake</span>
+                        <span class="chip">AWS</span>
+                        <span class="chip">Azure</span>
+                        <span class="chip">Dagster</span>
+                        <span class="chip">Apache Airflow</span>
+                        <span class="chip">DBT</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">SQL</span>
+                        <span class="chip">Data Governance</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-              </ul>
-            </div>
-          </div> -->
-          <!-- <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
-              </ul>
-            </div>
-          </div> -->
-          <!-- <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div> -->
-          <!-- </div>
-        </div> -->
-        <div class="row">
-          <div class="col-md-12 text-center">
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
+            <!-- Atos Syntel -->
+            <div class="tl-item reveal d2">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-company">Atos Syntel</div>
+                            <div class="exp-role">Data Engineer</div>
+                            <div class="exp-loc">Chennai, India · Client: State Street Corporation, US</div>
+                        </div>
+                        <div class="exp-pill">May 2018 — Sep 2021</div>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Developed and maintained reliable data pipelines for <strong>20+ clients</strong>, processing <strong>10+ GB/day</strong> of financial unstructured and semi-structured data using Python, SQL, AWS, Airflow, and Oracle Data Warehouse.</li>
+                        <li>Built staging and transformation workflows to ingest data from <strong>10+ heterogeneous sources</strong> including APIs, flat files (CSV), and upstream databases, delivering clean, analytics-ready data marts.</li>
+                        <li>Refactored on-premise workloads into scalable cloud architectures, achieving a <strong>35% reduction</strong> in both operational overhead and time-to-market.</li>
+                        <li>Designed and delivered an internal pipeline backlog dashboard that saved <strong>20+ hours/day</strong> of manual effort, reduced team workload by 30%, and supported projects generating <strong>~$200K annual revenue</strong>.</li>
+                        <li>Mentored and onboarded <strong>3 junior engineers</strong>, minimising their learning curve and significantly increasing overall team output.</li>
+                    </ul>
+                    <div class="tag-row">
+                        <span class="chip">Python</span>
+                        <span class="chip">SQL</span>
+                        <span class="chip">AWS</span>
+                        <span class="chip">Apache Airflow</span>
+                        <span class="chip">Oracle DW</span>
+                        <span class="chip">Data Modeling</span>
+                        <span class="chip">Cloud Migration</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      <!-- </div> -->
-    </footer>
-    
-  
+    </div>
+</section>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+<!-- ══════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section id="skills">
+    <div class="container">
+        <div class="section-eyebrow reveal">// skills & tools</div>
+        <h2 class="section-heading reveal">My Tech Stack</h2>
+        <div class="section-bar reveal"></div>
 
+        <div class="skills-grid">
+            <div class="skill-cat reveal">
+                <div class="skill-cat-head"><span class="ico">☁️</span> Cloud & Infrastructure</div>
+                <div class="pill-grid">
+                    <span class="skill-pill">AWS</span>
+                    <span class="skill-pill">Azure</span>
+                    <span class="skill-pill">Snowflake</span>
+                    <span class="skill-pill">Databricks</span>
+                    <span class="skill-pill">Docker</span>
+                    <span class="skill-pill">S3 / Data Lakes</span>
+                </div>
+            </div>
+            <div class="skill-cat reveal d1">
+                <div class="skill-cat-head"><span class="ico">⚙️</span> Orchestration & Pipelines</div>
+                <div class="pill-grid">
+                    <span class="skill-pill">Apache Airflow</span>
+                    <span class="skill-pill">Dagster</span>
+                    <span class="skill-pill">DBT</span>
+                    <span class="skill-pill">Kafka</span>
+                    <span class="skill-pill">ETL / ELT</span>
+                </div>
+            </div>
+            <div class="skill-cat reveal d2">
+                <div class="skill-cat-head"><span class="ico">💻</span> Languages</div>
+                <div class="pill-grid">
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">SQL</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">UNIX / Bash</span>
+                </div>
+            </div>
+            <div class="skill-cat reveal d3">
+                <div class="skill-cat-head"><span class="ico">🧠</span> Core Competencies</div>
+                <div class="pill-grid">
+                    <span class="skill-pill">Data Modeling</span>
+                    <span class="skill-pill">SQL Optimisation</span>
+                    <span class="skill-pill">Data Governance</span>
+                    <span class="skill-pill">CI/CD</span>
+                    <span class="skill-pill">Git</span>
+                    <span class="skill-pill">Agile / Scrum</span>
+                    <span class="skill-pill">Pipeline Automation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+<!-- ══════════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════════ -->
+<section id="education">
+    <div class="container">
+        <div class="section-eyebrow reveal">// education</div>
+        <h2 class="section-heading reveal">Academic Background</h2>
+        <div class="section-bar reveal"></div>
+
+        <div class="edu-grid">
+            <div class="edu-card reveal">
+                <div class="edu-pill">Sep 2021 — Dec 2022</div>
+                <div class="edu-uni">University of Liverpool</div>
+                <div class="edu-deg">MSc Advanced Computer Science</div>
+                <div class="edu-grade">First Class with Merit</div>
+                <div class="edu-courses">
+                    <strong>Coursework:</strong> Advanced &amp; Applied Algorithms, Optimisation,
+                    Time Series Analysis, Machine Learning &amp; AI
+                </div>
+            </div>
+            <div class="edu-card reveal d2">
+                <div class="edu-pill">Aug 2014 — May 2018</div>
+                <div class="edu-uni">Anna University</div>
+                <div class="edu-deg">BTech Information Technology</div>
+                <div class="edu-grade">7.7 / 10 GPA</div>
+                <div class="edu-courses">
+                    <strong>Coursework:</strong> OOP, Data Structures &amp; Algorithms,
+                    Software Engineering, Database Management
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact">
+    <div class="container">
+        <div class="contact-inner">
+            <div class="section-eyebrow reveal">// contact</div>
+            <h2 class="section-heading reveal">Let's Connect</h2>
+            <div class="section-bar reveal" style="margin: 0 auto 2rem;"></div>
+            <p class="contact-intro reveal">
+                Open to Data Engineer roles, consulting opportunities, and interesting conversations
+                about data infrastructure, cloud platforms, and scalable system design.
+            </p>
+            <div class="contact-grid reveal">
+                <a href="mailto:riogokul29@gmail.com" class="contact-tile">
+                    <span class="ico">✉️</span>
+                    <span class="lbl">Email</span>
+                    <span class="val">riogokul29@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/riogokul" target="_blank" rel="noopener" class="contact-tile">
+                    <span class="ico">💼</span>
+                    <span class="lbl">LinkedIn</span>
+                    <span class="val">linkedin.com/in/riogokul</span>
+                </a>
+                <a href="tel:+447760419995" class="contact-tile">
+                    <span class="ico">📞</span>
+                    <span class="lbl">Phone</span>
+                    <span class="val">077604 19995</span>
+                </a>
+            </div>
+            <a href="Gokulnath%20Suresh.pdf" download class="btn-primary reveal" style="margin: 0 auto;">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Download Full Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p class="footer-text">Designed &amp; built by <span>Gokulnath Suresh</span> · <span>2024</span></p>
+    <div class="footer-links">
+        <a href="mailto:riogokul29@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/riogokul" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="Gokulnath%20Suresh.pdf" download>Resume</a>
+    </div>
+</footer>
+
+<script>
+/* ─── CURSOR ─── */
+const $cursor = document.getElementById('cursor');
+const $dot    = document.getElementById('cursor-dot');
+let mx = 0, my = 0, cx = 0, cy = 0;
+
+document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    $dot.style.left = mx + 'px';
+    $dot.style.top  = my + 'px';
+});
+
+(function tick() {
+    cx += (mx - cx) * 0.12;
+    cy += (my - cy) * 0.12;
+    $cursor.style.left = cx + 'px';
+    $cursor.style.top  = cy + 'px';
+    requestAnimationFrame(tick);
+})();
+
+document.querySelectorAll('a, button, .skill-pill, .stat-box, .chip').forEach(el => {
+    el.addEventListener('mouseenter', () => $cursor.classList.add('hover'));
+    el.addEventListener('mouseleave', () => $cursor.classList.remove('hover'));
+});
+
+/* ─── NAVBAR ─── */
+const $nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    $nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('hamburger').classList.toggle('open');
+}
+function closeNav() {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+}
+
+/* ─── TYPING ANIMATION ─── */
+const phrases = [
+    'Data Engineer',
+    'ETL Pipeline Architect',
+    'Cloud Platform Builder',
+    'Snowflake & AWS Specialist',
+    'Pipeline Automation Expert',
+    'Data Modelling Enthusiast'
+];
+let pi = 0, ci = 0, deleting = false;
+const $typing = document.getElementById('typingEl');
+
+function type() {
+    const phrase = phrases[pi];
+    if (deleting) {
+        $typing.textContent = phrase.slice(0, --ci);
+    } else {
+        $typing.textContent = phrase.slice(0, ++ci);
+    }
+    if (!deleting && ci === phrase.length) {
+        deleting = true;
+        setTimeout(type, 2200);
+        return;
+    }
+    if (deleting && ci === 0) {
+        deleting = false;
+        pi = (pi + 1) % phrases.length;
+    }
+    setTimeout(type, deleting ? 45 : 85);
+}
+type();
+
+/* ─── SCROLL REVEAL ─── */
+const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+/* ─── COUNTER ANIMATION ─── */
+function animCount(el) {
+    const target = parseInt(el.dataset.count, 10);
+    const suffix = el.dataset.suffix || '';
+    const prefix = suffix === 'K' ? '$' : '';
+    let cur = 0;
+    const inc = target / 55;
+    const t = setInterval(() => {
+        cur = Math.min(cur + inc, target);
+        const display = Math.floor(cur);
+        el.textContent = prefix + display + (cur >= target ? suffix : '');
+        if (cur >= target) clearInterval(t);
+    }, 18);
+}
+
+const countObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            animCount(e.target);
+            countObs.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.6 });
+
+document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+/* ─── ACTIVE NAV HIGHLIGHT ─── */
+const sections = document.querySelectorAll('section[id]');
+const links    = document.querySelectorAll('.nav-links a:not(.btn-nav)');
+
+window.addEventListener('scroll', () => {
+    let active = '';
+    sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 180) active = s.id;
+    });
+    links.forEach(l => {
+        const match = l.getAttribute('href') === '#' + active;
+        l.style.color = match ? 'var(--text)' : '';
+    });
+});
+</script>
+</body>
 </html>
